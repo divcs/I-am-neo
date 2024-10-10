@@ -1,5 +1,3 @@
-// 1 Passing by Value
-
 #include <iostream>
 
 class MyClass
