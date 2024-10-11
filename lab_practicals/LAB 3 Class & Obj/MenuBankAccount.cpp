@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdio.h>
 using namespace std;
 
 int choice;
@@ -66,7 +67,7 @@ public:
 
  void currentBalance()
  {
-  cout << "Now your current balance amount is: " << balance;
+  cout << "Now your current balance amount is: " << balance << endl;
  }
 };
 
@@ -76,32 +77,79 @@ int main()
  int depositAmt, withdrawAmt, currentBalance;
 
  choiceSelection();
- switch (choice)
+
+ while (true)
  {
- case 1:
-  cout << "Enter the amount of money you want to deposit? ";
-  cin >> depositAmt;
-  bankAcc.depositAmount(depositAmt);
-  bankAcc.currentBalance();
+  switch (choice)
+  {
+   char yn;
+  case 1:
 
-  break;
+   cout << "Enter the amount of money you want to deposit? ";
+   cin >> depositAmt;
+   bankAcc.depositAmount(depositAmt);
+   bankAcc.currentBalance();
+   cout << "Do you want to go back to menu?" << endl;
+   cin >> yn;
+   if (yn == 'y')
+   {
+    cout << "Taking back to Menu....." << endl;
+    choice = choiceSelection();
+   }
+   else
+   {
+    cout << "Exiting the program..." << endl;
+    return 0;
+   }
 
- case 2:
-  cout << "Enter the amount of money you want to withdraw? ";
-  cin >> withdrawAmt;
-  bankAcc.withdrawAmount(withdrawAmt);
-  bankAcc.currentBalance();
-  break;
+   break;
 
- case 3:
-  bankAcc.currentBalance();
-  break;
+  case 2:
+   cout << "Enter the amount of money you want to withdraw? ";
+   cin >> withdrawAmt;
+   bankAcc.withdrawAmount(withdrawAmt);
+   bankAcc.currentBalance();
+   cout << "Do you want to go back to menu?" << endl;
+   cin >> yn;
+   if (yn == 'y')
+   {
+    cout << "Taking back to Menu....." << endl;
+    choice = choiceSelection();
+   }
+   else
+   {
+    cout << "Exiting the program..." << endl;
+    return 0;
+   }
 
- default:
-  cout << "Invalid choice" << endl;
-  cout << "Taking back to Menu.....";
-  choiceSelection();
-  break;
+   break;
+
+  case 3:
+   bankAcc.currentBalance();
+   cout << "Do you want to go back to menu?" << endl;
+   cin >> yn;
+   if (yn == 'y')
+   {
+    cout << "Taking back to Menu....." << endl;
+    choice = choiceSelection();
+   }
+   else
+   {
+    cout << "Exiting the program..." << endl;
+    return 0;
+   }
+
+   break;
+
+  default:
+   cout << "Invalid choice" << endl;
+   cout << "Taking back to Menu.....";
+   choiceSelection();
+   break;
+  }
  }
+
  return 0;
 }
+
+// implement the code for when 'n' is the choice when asked 'Do you want to go back to Menu?'
