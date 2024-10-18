@@ -1,45 +1,55 @@
 #include <iostream>
 #include <string>
+
 using namespace std;
 
 class Car
 {
- int license_num;
- string brand;
- string model;
+private:
+ string licensePlate; // License plate number
+ string brand;        // Brand of the car
+ string model;        // Model of the car
 
 public:
- Car(int ln, string b, string m)
+ // Parameterized constructor
+ Car(const string &plate, const string &carBrand, const string &carModel)
+     : licensePlate(plate), brand(carBrand), model(carModel)
  {
-  license_num = ln;
-  brand = b;
-  model = m;
+  cout << "Car created: " << licensePlate << ", Brand: " << brand << ", Model: " << model << endl;
  }
- // void display(){
- //  cout << "License Number: " << license_num << endl;
- //  cout << "Brand: " << brand << endl;
- //  cout << "Model: " << model << endl;
- // }
 
+ // Destructor
  ~Car()
  {
-  cout << "Car object has been destroyed." << license_num << endl;
+  cout << "Car destroyed: " << licensePlate << endl;
+ }
+
+ // Getter for license plate
+ string getLicensePlate() const
+ {
+  return licensePlate;
  }
 };
+
+// Function to create and destroy car objects dynamically
+void simulateCarRental()
+{
+ cout << "Simulating car rental..." << endl;
+
+ // Dynamically create car objects
+ Car *car1 = new Car("ABC123", "Toyota", "Camry");
+ Car *car2 = new Car("XYZ789", "Honda", "Accord");
+
+ // Perform operations with the cars (if necessary)
+ // ...
+
+ // Clean up: destroy the car objects
+ delete car1;
+ delete car2;
+}
+
 int main()
 {
- int ln;
- string br, mo;
-
- cout << "Enter license number: ";
- cin >> ln;
- cout << "Enter brand: ";
- cin >> br;
- cout << "Enter model: ";
- cin >> mo;
-
- Car c(ln, br, mo);
- 
-
+ simulateCarRental(); // Call the function to see the behavior
  return 0;
 }
