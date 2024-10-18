@@ -3,19 +3,26 @@ using namespace std;
 
 class BitManipulator
 {
- int n;
-
 public:
- BitManipulator(int x) : n(x) {}
+ static inline unsigned int reverseBits(unsigned int n)
+ {                      // Use unsigned int
+  unsigned int rev = 0; // Use unsigned int for the result as well
+  for (int i = 0; i < 32; i++)
+  {
+   rev = (rev << 1) | (n & 1); // Reverse the bit
+   n = n >> 1;                 // Shift right
+  }
+  return rev; // Return the reversed unsigned integer
+ }
 };
 
 int main()
 {
- int n;
-
+ unsigned int n; // Use unsigned int here for input
+ cin >> n;
+ cout << BitManipulator::reverseBits(n) << endl; // Call the static method and print the result
  return 0;
 }
-
 /*
 
 Jack needs to implement a BitManipulator class with a static method named reverseBits that efficiently reverses the bits of a 32-bit integer. The method should be defined as an inline function to optimize performance.
