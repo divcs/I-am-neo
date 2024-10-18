@@ -94,3 +94,45 @@ int main()
 
  return 0;
 }
+
+/*
+Virat, fascinated by number theory, challenges you to develop a program that finds the Kth digit of the number obtained by raising a base integer N to the power of an exponent M.
+
+
+
+Using a class called ExponentialCalculator, implement a method findKthDigit to compute this digit. The method should efficiently handle the calculation and extraction of the Kth digit from the end of the result of NM.
+
+
+
+Company Tags: Flipkart
+
+Input format :
+The input consists of three space-separated integers N, M, and K.
+
+N is of type long long, representing the base number.
+M is of type long long, representing the exponent.
+K is of type int, representing the position of the digit to extract (1-based index from the end).
+Output format :
+The output prints an integer, representing the Kth digit of NM.
+
+
+
+Refer to the sample output for formatting specifications.
+
+Code constraints :
+1 ≤ M, N ≤ 15
+
+Sample test cases :
+Input 1 :
+2 4 2
+Output 1 :
+1
+Input 2 :
+4 3 2
+Output 2 :
+6
+Input 3 :
+15 15 15
+Output 3 :
+8
+*/
