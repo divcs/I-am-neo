@@ -1,0 +1,71 @@
+
+Problem Statement
+
+
+
+Kate is developing a calendar application that needs to determine the number of days in a given month of a specified year. To accomplish this, she will use a C++ class named MonthDays. 
+
+
+
+This class will be designed to handle various functionalities including determining the number of days in any month while correctly accounting for leap years in February.
+
+
+
+The MonthDays class should have:
+
+A parameterized constructor to initialize the month and year.
+A copy constructor to handle copying of objects.
+A destructor to output a message when the object is destroyed.
+A method named getDaysInMonth() that returns the number of days in the specified month of the given year.
+Input format :
+The input consists of two integers: month (1-12) and year (a positive integer).
+
+Output format :
+For valid months (1-12), the output should display "Number of days is " followed by the number of days in the specified month of the given year.
+
+For invalid months (not in the range 1-12), the output should display: "Invalid month input".
+
+
+
+Additional lines of output:
+
+"Copy constructor called" will be printed when the copy constructor is invoked.
+"MonthDays object is being destroyed" will be printed once for each MonthDays object when the object is destroyed.
+
+
+Refer to the sample output for the formatting specifications.
+
+Code constraints :
+1 ≤ month ≤ 12
+
+1900 ≤ year ≤ 2100
+
+Sample test cases :
+Input 1 :
+1 2024
+Output 1 :
+Number of days is 31
+Copy constructor called
+MonthDays object is being destroyed
+MonthDays object is being destroyed
+Input 2 :
+4 2023
+Output 2 :
+Number of days is 30
+Copy constructor called
+MonthDays object is being destroyed
+MonthDays object is being destroyed
+Input 3 :
+2 1996
+Output 3 :
+Number of days is 29
+Copy constructor called
+MonthDays object is being destroyed
+MonthDays object is being destroyed
+Input 4 :
+2 1999
+Output 4 :
+Number of days is 28
+Copy constructor called
+MonthDays object is being destroyed
+MonthDays object is being destroyed
