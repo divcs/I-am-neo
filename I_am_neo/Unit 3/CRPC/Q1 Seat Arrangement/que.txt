@@ -1,0 +1,47 @@
+Problem Statement
+
+
+
+You are designing a seat arrangement system for a small theatre. The theatre manager wants to know the number of possible seating arrangements given a certain number of available seats and a certain number of people. 
+
+
+
+You are required to implement this system using a C++ class called SeatArrangement.
+
+
+
+Your class should use:
+
+Parameterized Constructor: To initialize the number of seats and people.
+Destructor: To display a message indicating that the object is destroyed.
+A Method to Calculate Permutations: The class should have a method calculatePermutations() that returns the number of possible seating arrangements.
+Input format :
+The input consists of two long integers:
+
+r - the number of seats.
+n - the number of people.
+Output format :
+The first line of output displays the number of ways the people can be seated in the given number of seats.
+
+The second line displays a message indicating that the SeatArrangement object is destroyed.
+
+
+
+Refer to the sample output for the formatting specifications.
+
+Code constraints :
+1 ≤ n, r ≤ 10
+
+Sample test cases :
+Input 1 :
+5
+3
+Output 1 :
+Number of ways people can be seated: 60
+SeatArrangement object is being destroyed
+Input 2 :
+4
+2
+Output 2 :
+Number of ways people can be seated: 12
+SeatArrangement object is being destroyed

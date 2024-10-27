@@ -1,0 +1,69 @@
+Problem Statement
+
+
+
+Jackson is working on a decoding application that interprets digit sequences into possible letter combinations, where '1' corresponds to 'A', '2' to 'B', ..., and '26' to 'Z'. You are required to help Jackson implement this functionality using a C++ class called Decoder.
+
+
+
+The class should include:
+
+Parameterized Constructor: To initialize the digit sequence.
+Copy Constructor: To create a copy of an existing Decoder object.
+Destructor: To display a message indicating that the object is destroyed.
+A Method to Count Possible Decodings: The class should have a method countDecodings() that returns the number of possible ways to decode the sequence.
+
+
+Example
+
+
+
+Input:  
+
+digits[] = "121"
+
+
+
+Output: 
+
+Possible count of decodings of the sequence: 3
+
+Decoder object is being destroyed
+
+
+
+Explanation: 
+
+The digit sequence "121" can be decoded into letters based on the mapping where '1' = 'A', '2' = 'B', etc. The possible decodings are:
+
+"ABA": Decode as '1' → 'A', '2' → 'B', '1' → 'A'.
+"AU": Decode as '1' → 'A', '21' → 'U'.
+"LA": Decode as '12' → 'L', '1' → 'A'.
+Thus, there are 3 possible decodings for "121" followed by the line indicating that Decoder object is destroyed.
+
+Input format :
+The input consists of a single line containing a string of digits (0-9) representing the encoded message.
+
+Output format :
+The output displays the total number of possible decodings for the given digit sequence.
+
+After the main output, when the object is destroyed, a message should be displayed: "Decoder object is being destroyed".
+
+
+
+Refer to the sample output for the formatting specifications.
+
+Code constraints :
+The input string can have a maximum length of 10 characters.
+
+The string should only contain digits.
+
+Sample test cases :
+Input 1 :
+121
+Output 1 :
+Possible count of decodings of the sequence: 3Decoder object is being destroyed
+Input 2 :
+226
+Output 2 :
+Possible count of decodings of the sequence: 3Decoder object is being destroyed
