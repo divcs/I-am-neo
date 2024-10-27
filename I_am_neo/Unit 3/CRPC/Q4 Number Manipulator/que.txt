@@ -1,0 +1,35 @@
+Problem Statement
+
+
+
+Jake is working on a project to manipulate large numbers. He needs your help to create a C++ program that replaces all occurrences of the digit '0' in a given number with the digit '1' using object-oriented programming concepts. Specifically, Jake wants you to utilize classes, member functions, and constructors to solve the problem.
+
+
+
+Your task is to implement a C++ program that defines a class named NumberManipulator which contains the following features:
+
+Parameterized Constructor with Initializer List: Initializes the class with a number.
+Member Function: A method named replaceZeros that recursively replaces all occurrences of the digit '0' with '1'.
+Destructor: Ensures proper cleanup when the object is destroyed.
+Input format :
+The input consists of a single long integer, n.
+
+Output format :
+The output displays the number after all '0's have been replaced by '1's.
+
+
+
+Refer to the sample output for the formatting specifications.
+
+Code constraints :
+0 ≤ n ≤ 1011
+
+Sample test cases :
+Input 1 :
+10203
+Output 1 :
+Number after replacement: 11213
+Input 2 :
+100
+Output 2 :
+Number after replacement: 111
