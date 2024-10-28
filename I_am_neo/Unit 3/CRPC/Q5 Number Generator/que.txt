@@ -1,0 +1,40 @@
+Problem Statement
+
+
+
+Sunank is working on a specialized number system that uses only the digits 3 and 4. He needs to develop a program that generates numbers in this system and retrieves specific terms from the sequence.
+
+
+
+Your task is to help Sunank create a C++ program that should generate numbers in the unique number system up to the nth term, where n is an input integer. These numbers should be written to a file named numbers.txt, with each number on a new line.
+
+
+
+After writing the sequence to numbers.txt, the program should read this file and output the nth term in the sequence.
+
+
+
+The sequence begins with 3, 4, 33, 34, 43, 44, 333, 334, ...
+
+Input format :
+The input consists of an integer n.
+
+Output format :
+The output prints an integer which is the nth number of the given number system.
+
+
+
+Refer to the sample output for the formatting specifications.
+
+Code constraints :
+3 ≤ n ≤ 1000
+
+Sample test cases :
+Input 1 :
+45
+Output 1 :
+34443
+Input 2 :
+7
+Output 2 :
+333
