@@ -1,0 +1,71 @@
+Problem Statement
+
+
+
+Suppose you are working on a project to model a family tree. You need to create classes to represent different family members, including parents and children.
+
+
+
+You decide to implement a class hierarchy with a base class called Parent, and three derived classes called Child1, Child2, and Child3. The Parent class will have a default constructor and a destructor, while each derived class will have a parameterized constructor and a destructor.
+
+
+
+Your task is to implement the class hierarchy and observe the order of constructor and destructor execution when creating objects of these classes.
+
+
+
+Write a program that includes the required classes and demonstrates the order of constructor and destructor execution by creating objects of the Child1, Child2, and Child3 classes. Print appropriate messages to indicate the constructor and destructor calls.
+
+Input format :
+The first input is an integer representing the value for Child1 constructor.
+
+The second input is a floating-point number b representing the value for Child2 constructor.
+
+The third input is a string c representing the value for Child3 constructor.
+
+Output format :
+The output should display the following messages:
+
+
+
+"Parent constructor" for each parent object.
+
+"Child1 constructor: <value>" for Child1 object.
+
+"Child2 constructor: <value>" for Child2 object.
+
+"Child3 constructor: <text>" for Child3 object.
+
+"Child3 destructor", "Child2 destructor", "Child1 destructor" for destruction of each object.
+
+"Parent destructor" for destruction of each parent object.
+
+
+
+Refer to the sample output for the formatting specifications.
+
+Code constraints :
+The integer value for the Child1 constructor can be any valid integer.
+
+The floating-point value for the Child2 constructor can be any valid floating-point number.
+
+The text for the Child3 constructor can contain any printable characters and have a maximum length of 100 characters.
+
+Sample test cases :
+Input 1 :
+10
+5.5
+ABC
+Output 1 :
+Parent constructor
+Child1 constructor: 10
+Parent constructor
+Child2 constructor: 5.5
+Parent constructor
+Child3 constructor: ABC
+Child3 destructor
+Parent destructor
+Child2 destructor
+Parent destructor
+Child1 destructor
+Parent destructor
