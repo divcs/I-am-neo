@@ -1,0 +1,50 @@
+Problem Statement
+
+
+
+Hemanth is developing a tool to find the longest increasing subsequence in an array. Write a program using a class LongestIncreasingSubsequence that demonstrates the use of constructors, destructors, and methods. The class should include a parameterized constructor to initialize the array, a destructor, and a method to find and print the length and elements of the longest increasing subsequence.
+
+Input format :
+The first line contains an integer t, representing the number of test cases.
+
+For each test case:
+
+The first line contains an integer n, the size of the array.
+The second line contains n space-separated integers, the elements of the array.
+Output format :
+For each test case,
+
+The first line prints the length of the longest increasing subarray.
+
+The second line prints the elements of the longest increasing subarray separated by a space.
+
+
+
+Refer to the sample output for the formatting specifications.
+
+Code constraints :
+In this scenario, the test cases fall under the following constraints:
+
+1 ≤ t ≤ 10
+
+1 ≤ n ≤ 10
+
+Sample test cases :
+Input 1 :
+1
+10
+11 3 1 4 7 8 12 2 3 7
+Output 1 :
+5
+1 4 7 8 12 
+Input 2 :
+2
+10
+12 13 1 5 4 7 8 10 10 11
+7
+5 8 9 7 6 7 8
+Output 2 :
+4
+4 7 8 10 
+3
+5 8 9 
