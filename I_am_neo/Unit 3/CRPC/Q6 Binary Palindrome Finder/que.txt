@@ -1,0 +1,28 @@
+Problem Statement
+
+
+
+Jake needs a program to find the A-th binary palindrome number. Implement a class BinaryPalindromeFinder that uses constructors, destructors, and initializer lists to manage the search. The class should include methods for checking binary palindromes and finding the A-th palindrome. Input an integer A and output the corresponding binary palindrome.
+
+Input format :
+The input represents the integer value of A that you need to input.
+
+Output format :
+The output consists of the decimal value of the Ath palindromic binary number.
+
+
+
+Refer to the sample output for the formatting specifications.
+
+Code constraints :
+1 ≤ A ≤ 100
+
+Sample test cases :
+Input 1 :
+2
+Output 1 :
+3
+Input 2 :
+17
+Output 2 :
+85
