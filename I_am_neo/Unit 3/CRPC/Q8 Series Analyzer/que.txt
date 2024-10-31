@@ -1,0 +1,58 @@
+Problem Statement
+
+
+
+Sakshi is tasked with analyzing numerical sequences to predict the next number based on their pattern. Implement a class SeriesAnalyzer that determines if a given sequence follows an Arithmetic, Geometric, or Fibonacci pattern. The class should use the following methods:
+
+
+
+isArithmetic(): Checks if the sequence follows an Arithmetic pattern (constant difference between terms).
+isGeometric(): Checks if the sequence follows a Geometric pattern (constant ratio between terms).
+isFibonacci(): Checks if the sequence follows a Fibonacci pattern (each term is the sum of the two preceding terms).
+analyzeAndPrint(): Analyzes the sequence and prints the next number in the sequence based on the identified pattern. If no pattern is matched, it prints -999. For Geometric sequences with non-integer results, ensure the output is printed with one decimal place.
+
+
+Company Tags: SAP Labs
+
+Input format :
+The first line consists of an integer n, representing the length of the series.
+
+The second line consists of n space-separated list of integers representing the series.
+
+Output format :
+If the series is determined to be an Arithmetic or Fibonacci series, the output will be an integer.
+
+If the series is determined to be a Geometric series and the next number is a non-integer, the output will be a floating-point number.
+
+If the series doesn't match any type, the output will be -999.
+
+
+
+Refer to the sample output for the formatting specifications.
+
+Code constraints :
+1 ≤ n ≤ 105
+
+
+
+Sample test cases :
+Input 1 :
+4
+2 4 6 8
+Output 1 :
+10
+Input 2 :
+4
+3 6 12 24
+Output 2 :
+48.0
+Input 3 :
+5
+0 1 1 2 3
+Output 3 :
+5
+Input 4 :
+4
+2 5 10 20
+Output 4 :
+-999
