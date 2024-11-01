@@ -1,0 +1,54 @@
+Problem Statement
+
+
+
+John, a senior HR manager, needs a program to efficiently evaluate the performance and compensation of managers in his organization. Each manager's compensation includes a bonus, and their performance score depends on their salary and team size. To simplify this task, a program is required that uses multiple inheritance.
+
+
+
+The program should define a base class Employee with attributes id and salary and a method to calculate a 10% bonus. Another class, TeamLead, will have attributes department and teamSize, along with a method to calculate the performance score. A derived class Manager should inherit both and display the results.
+
+
+
+Formulae used:
+
+Bonus Calculation = 0.10 x salary
+Performance Score = Team size x (salary / 1000)
+Input format :
+The first line consists of an integer representing the id of the manager.
+
+The second line consists of a double-point number representing the salary of the manager.
+
+The third line consists of an integer representing the team size of the manager.
+
+Output format :
+The first line displays the "Bonus: " representing the bonus amount rounded to 2 decimal places.
+
+The second line displays the "Team Performance Score: " representing the team performance score rounded to 2 decimal places.
+
+
+
+Refer to the sample output for the formatting specifications.
+
+Code constraints :
+1 ≤ id ≤ 1000
+
+0.00 ≤ salary ≤ 100000.00
+
+1 ≤ team size≤ 100
+
+Sample test cases :
+Input 1 :
+101
+55000.0
+12
+Output 1 :
+Bonus: 5500.00
+Team Performance Score: 660.00
+Input 2 :
+104
+9800.0
+10
+Output 2 :
+Bonus: 980.00
+Team Performance Score: 98.00
