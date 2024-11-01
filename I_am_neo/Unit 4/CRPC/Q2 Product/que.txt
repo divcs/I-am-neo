@@ -1,0 +1,69 @@
+Problem Statement
+
+
+
+Ravi, a store manager, is responsible for managing the pricing and sales of electronic items in his store. He needs to calculate various financial aspects of each product, including its price after applying a discount, its price after adding tax, and the total cost for a given quantity of the product.
+
+
+
+To accomplish this, you need to write a program using single inheritance. Define a base class Product to manage basic product details such as product_id and price. Extend this with a derived class ElectronicItem that includes additional functionality to calculate:
+
+
+
+Price After Discount: The price after applying a 10% discount.
+Price With Tax: The price after adding an 8% tax.
+Total Cost: The total cost for a specified quantity of the item.
+
+
+Formulae Used:
+
+Price After Discount = Price - (Price * 0.10)
+Price With Tax = Price + (Price * 0.08)
+Total Cost = Price * Quantity
+Input format :
+The first line consists of an integer representing the product_id.
+
+The second line consists of a double-point number representing the price of the item.
+
+The third line consists of an integer representing the warranty period (in months).
+
+The fourth line consists of an integer representing the quantity of items.
+
+Output format :
+The output should be formatted as follows:
+
+"Price: X" where X is the price after applying the discount, rounded to 2 decimal places.
+"Price With Tax: Y" where Y is the price with tax, rounded to 2 decimal places.
+"Total Cost: Z" where Z is the total cost for the given quantity, rounded to 2 decimal places.
+
+
+Refer to the sample output for the formatting specifications.
+
+Code constraints :
+1 ≤ product_id ≤ 1000
+
+0.00 ≤ price ≤ 10000.00
+
+1 ≤ warranty period ≤ 1000
+
+1 ≤ quantity ≤ 100
+
+Sample test cases :
+Input 1 :
+101
+500.00
+2
+3
+Output 1 :
+Price: 450.00
+Price With Tax: 540.00
+Total Cost: 1500.00
+Input 2 :
+202
+1500.00
+1
+5
+Output 2 :
+Price: 1350.00
+Price With Tax: 1620.00
+Total Cost: 7500.00
