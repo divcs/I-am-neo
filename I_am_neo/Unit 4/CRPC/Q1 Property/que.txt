@@ -1,0 +1,56 @@
+Problem Statement
+
+
+
+Aarti is a real estate agent managing various properties, including houses. She needs to evaluate several financial aspects of each house, such as the total bedroom area, the discounted price after applying a 10% discount, and the cost to paint the house based on its area.
+
+
+
+Write a program using single inheritance to model this task. Define a base class Property with attributes locationCode, price, and area. Extend this with a derived class House that includes additional attributes like number_of_bedrooms and methods to calculate the total bedroom area, the discounted price, and the cost to paint the house.
+
+
+
+Formulas Used:
+
+Total Bedroom Area = number_of_bedrooms * 200.0
+Discounted Price = price - (price * 0.10)
+Cost to Paint House = area * 5.0
+Input format :
+The first line contains an integer representing the location code
+
+The second line contains a double price representing the price of the house.
+
+The third line contains a double area representing the area of the house in square feet.
+
+The fourth line contains an integer representing the number of bedrooms.
+
+Output format :
+The first line displays the "Total Bedroom Area: " representing the total Bedroom Area in square feet, formatted to 2 decimal places.
+
+The second line displays the "Discount Price: " representing the discounted Price of the house, formatted to 2 decimal places.
+
+The third line displays the "Cost to Paint House: " representing the cost to Paint the House, formatted to 2 decimal places.
+
+
+
+Refer to the sample output for the formatting specifications.
+
+Code constraints :
+1 ≤ locationCode ≤ 1000
+
+0.00 ≤ price ≤ 1,000,000.00
+
+0.00 ≤ area ≤ 10,000.00
+
+1 ≤ number_of_bedrooms ≤ 10
+
+Sample test cases :
+Input 1 :
+1001
+1000.0
+20.0
+4
+Output 1 :
+Total Bedroom Area: 800.00
+Discount Price: 900.00
+Cost to Paint House: 100.00
