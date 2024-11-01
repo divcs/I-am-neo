@@ -1,0 +1,87 @@
+Problem Statement
+
+
+
+Aarti, a real estate agent specializing in high-end residential properties, needs a system to evaluate luxury property values. The system should calculate:
+
+
+
+Total Bedroom Value: Increases by 5.0 of the base price per additional bedroom.
+Price With Luxury Tax: Adjusts the base price with a specified luxury tax rate.
+Renovation Cost: Based on the property’s area, at Rs. 50 per square foot.
+Total Property Value: Sum of the adjusted price and renovation cost.
+
+
+The system should utilize a class hierarchy:
+
+Property: Base class with attributes like property_id, price, and area.
+ResidentialProperty: Derived class adding number_of_bedrooms and calculating bedroom value.
+LuxuryProperty: Further derived class introducing luxury_tax_rate and calculating total property value.
+
+
+Formulae Used:
+
+Total Bedroom Value = Price x (1+(Number of bedrooms x 0.05))
+Price with Luxury Tax = Price x (1+ Luxury Tax Rate)
+Renovation Cost = Area x 50.0
+Total Property Value = Price with Luxury Tax + Renovation Cost
+Input format :
+The first line consists of an integer representing the property id.
+
+The second line consists of a double-point number representing the price of the property.
+
+The third line consists of a double-point number representing the area of the property.
+
+The fourth line consists of an integer representing the number of bedrooms.
+
+The fifth line consists of a double-point number representing the luxury tax rate.
+
+Output format :
+The output displays the following format:
+
+The total bedroom value is rounded to 2 decimal places: "Total Bedroom Value: <value>".
+
+The total price with luxury tax is rounded to 2 decimal places: "Total Price: <value>".
+
+The renovation cost is rounded to 2 decimal places: "Renovation Cost: <value>".
+
+The total property value is rounded to 2 decimal places: "Total Property Value: <value>".
+
+
+
+Refer to the sample output for the formatting specifications.
+
+Code constraints :
+1 ≤ property id ≤ 1000
+
+0.00 ≤ price ≤ 10000.00
+
+0.00 ≤ area ≤ 1000.00
+
+1 ≤ number of bedrooms ≤ 100
+
+1.0 ≤ luxury tax rate ≤ 1000.0
+
+Sample test cases :
+Input 1 :
+101
+5000.00
+200.00
+3
+0.10
+Output 1 :
+Total Bedroom Value: 5750.00
+Total Price: 5500.00
+Renovation Cost: 10000.00
+Total Property Value: 15500.00
+Input 2 :
+102
+7500.00
+250.00
+4
+0.15
+Output 2 :
+Total Bedroom Value: 9000.00
+Total Price: 8625.00
+Renovation Cost: 12500.00
+Total Property Value: 21125.00
