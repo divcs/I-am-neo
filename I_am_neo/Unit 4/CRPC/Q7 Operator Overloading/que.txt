@@ -1,0 +1,43 @@
+Problem Statement
+
+
+
+Olivia wants to manage her personal bank account efficiently and is concerned about her balance. To achieve this, she needs a program that utilizes operator overloading (-) to apply a penalty of 10% (0.10) to her balance if it falls below a set threshold. The program should take her initial balance as input and compute the new balance after the penalty.
+
+
+
+Based on the new balance, it should print one of the following messages: "Account Overdrawn" if the balance is Rs. 10 or less, "Warning: Low Balance" if the balance is between Rs. 10 and Rs. 500, or "Balance is sufficient" if it is Rs. 500 or more. Finally, the new balance should be displayed.
+
+Input format :
+The input consists of an integer, N, representing Olivia's initial account balance.
+
+Output format :
+The first line displays a message indicating the status of the account balance ("Account Overdrawn", "Warning: Low Balance", or "Balance is sufficient").
+
+The second line displays an integer, representing the new balance after the penalty.
+
+
+
+Refer to the sample output for the formatting specifications.
+
+Code constraints :
+The test cases fall under the following constraints:
+
+100 ≤ N ≤ 10^5
+
+Sample test cases :
+Input 1 :
+5000
+Output 1 :
+Balance is sufficient
+4500
+Input 2 :
+550
+Output 2 :
+Warning: Low Balance
+495
+Input 3 :
+5
+Output 3 :
+Account Overdrawn
+4
