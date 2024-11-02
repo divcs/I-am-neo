@@ -1,0 +1,54 @@
+Problem Statement
+
+
+
+Amit is developing a smart home system that integrates both lighting and security functionalities. He needs to manage and calculate different aspects of the system, including brightness and security status. To facilitate this, he is implementing a program using multiple inheritance.
+
+
+
+In this system, the LightingSystem class handles brightness settings, while the SecuritySystem class manages security statuses. The derived SmartHome class inherits from both and performs calculations to display:
+
+
+
+The total brightness, including additional brightness.
+The total security status, including additional security status.
+The difference between the brightness and security status.
+Input format :
+The first line consists of an integer X representing the brightness level.
+
+The second line consists of an integer Y representing the security status.
+
+The third line consists of an integer A representing the additional brightness.
+
+The fourth line consists of an integer B representing the additional security status.
+
+Output format :
+The output displays the following lines:
+
+The total brightness including additional brightness in the format: Total Brightness: <totalBrightness>.
+The total security status including additional security status in the format: Total Security Status: <totalSecurityStatus>.
+The difference between brightness and security status in the format: Difference: <brightnessDifference>.
+
+
+Refer to the sample output for the formatting specifications.
+
+Code constraints :
+1 ≤ X, Y ≤ 100
+
+1 ≤ A, B ≤ 100
+
+Sample test cases :
+Input 1 :
+10 3
+15 20
+Output 1 :
+Total Brightness: 25
+Total Security Status: 23
+Difference: 7
+Input 2 :
+25 10
+3 4
+Output 2 :
+Total Brightness: 28
+Total Security Status: 14
+Difference: 15
