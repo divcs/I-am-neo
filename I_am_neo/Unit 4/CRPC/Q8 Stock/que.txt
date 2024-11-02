@@ -1,0 +1,71 @@
+Problem Statement
+
+
+
+John is managing his stock investments and wants to evaluate his transactions using a Stock class. The Stock class has methods to calculate profit or loss from buying and selling prices and uses operator overloading to perform certain calculations. John needs to:
+
+
+
+Compute the profit or loss between two stock transactions using the subtraction operator (-).
+Calculate the total price by adding the selling price and buying price of the same stock using the addition operator (+).
+Display whether the transaction resulted in profit or loss and if the profit percentage is high.
+
+
+Formulae Used:
+
+
+
+The profit or loss is calculated based on the formula: profit = sellingPrice - buyingPrice.
+The profit is considered "High" if it's more than 20% of the buying price.
+Profit Percentage = (Profit / buyPrice) x 100
+Input format :
+The first line of input is an integer representing the buying price of a stock.
+
+The second line of input is an integer representing the selling price of the same stock.
+
+Output format :
+The output displays the calculated profit, and if the profit percentage is greater than 20%, indicate a message in the following format:
+
+
+
+If profit is positive: "Profit: <profit_value>".and "High Profit", separated by a line.
+
+
+
+If profit is negative: "Loss: <profit_value>".
+
+
+
+The last line of the output displays the total price of the buying and selling prices in the format:
+
+"Total Price: <total_price>".
+
+
+
+Refer to the sample output for the formatting specifications.
+
+Code constraints :
+The test cases will fall under the following constraints:
+
+1 < buying price, selling price < 1000
+
+Sample test cases :
+Input 1 :
+120
+90
+Output 1 :
+Loss: -30
+Total Price: 210
+Input 2 :
+80
+100
+Output 2 :
+Profit: 20
+High Profit
+Total Price: 180
+Input 3 :
+150
+160
+Output 3 :
+Profit: 10
+Total Price: 310
