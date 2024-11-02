@@ -1,0 +1,52 @@
+Problem Statement
+
+
+
+Sita, a restaurant manager, needs to efficiently oversee both kitchen and service staff by tracking the number of dishes prepared and tables served. To streamline her calculations, she requires a program that uses multiple inheritance.
+
+
+
+The program should define a base class Chef to manage dish-related data and another class Waiter to handle table-related information. A derived class Manager should inherit from both Chef and Waiter and implement methods to calculate and display the following: the average number of dishes per table (only if tables are served), and the total number of dishes and tables after adding a constant value of 10.
+
+
+
+Note
+
+Average = Total Number of Dishes x Number of Tables
+
+Input format :
+The first line consists of an integer N representing the number of dishes.
+
+The second line consists of an integer M representing the number of tables.
+
+Output format :
+The output displays the following lines:
+
+The total number of dishes in the format: Dishes: <totalDishes>.
+The average number of dishes per table, rounded to 2 decimal places, in the format: Average: <averageDishesPerTable>..
+The total number of dishes after adding 10, in the format: Total dishes: <updatedDishes>.
+The total number of tables after adding 10, in the format: Total tables: <updatedTables>.
+
+
+Refer to the sample output for the formatting specifications.
+
+Code constraints :
+1 ≤ N and M ≤ 1000
+
+Sample test cases :
+Input 1 :
+23
+4
+Output 1 :
+Dishes: 23
+Average: 5.75
+Total dishes: 33
+Total tables: 14
+Input 2 :
+6
+3
+Output 2 :
+Dishes: 6
+Average: 2.00
+Total dishes: 16
+Total tables: 13
