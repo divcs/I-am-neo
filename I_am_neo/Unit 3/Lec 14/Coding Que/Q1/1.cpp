@@ -1,96 +1,47 @@
-/*
-Create a program to manage book sales data, including the units sold, total revenue, and average price. Implement a class named SalesData with the following features:
-
-
-
-Parameterized constructor: Accepts total revenue (double) and units sold (integer) as arguments.
-
-
-
-displayData function: Displays units sold, total revenue, and average price (calculated as total revenue divided by units sold).
-
-
-
-Your task is to implement the SalesData class and display a book's sales data using an instance of the class.
-
-Input format :
-The input consists of the following in separate lines:
-
-Total revenue generated (a double value)
-Number of units sold (an integer)
-Output format :
-The program displays the following in separate lines:
-
-Units sold (an integer)
-Total revenue rounded to two decimal places (a double value)
-Average price rounded to two decimal places (a double value)
-
-
-Refer to the sample output for the exact format.
-
-Code constraints :
-In this scenario, the test cases fall under the following constraints:
-
-1.0 ≤ price ≤ 1000.0
-
-1 ≤ number of units ≤ 200
-
-Sample test cases :
-Input 1 :
-1890.23
-500
-Output 1 :
-Units Sold: 500
-Revenue Generated: 1890.23
-Average Price: 3.78
-Input 2 :
-25.0
-25
-Output 2 :
-Units Sold: 25
-Revenue Generated: 25.00
-Average Price: 1.00
-*/
-
 #include <iostream>
-#include <iomanip>
-
+#include <cmath>
 using namespace std;
 
 class SalesData
 {
-private:
- double totalRevenue;
  int unitsSold;
+ double totalRevenue;
 
 public:
- // Parameterized constructor
- SalesData(double revenue, int units) : totalRevenue(revenue), unitsSold(units) {}
+ SalesData(double r, int u) : totalRevenue(r), unitsSold(u) {}
 
- // Function to display sales data
- void displayData()
+ double roundToTwoDecimalPlaces(double value)
  {
-  double averagePrice = 0.0;
+  return round(value * 100) / 100;
+ }
+
+ void display()
+ {
+  float avgPrice = 0.0;
+
   if (unitsSold > 0)
   {
-   averagePrice = totalRevenue / unitsSold;
+   avgPrice = totalRevenue / unitsSold;
   }
 
-  cout << "Units Sold: " << unitsSold << endl;
-  cout << fixed << setprecision(2) << "Revenue Generated: " << totalRevenue << endl;
-  cout << fixed << setprecision(2) << "Average Price: " << averagePrice << endl;
+  cout << "Units Sold: " << unitsSold;
+  cout < "Total Revenue: " << roundToTwoDecimalPlaces(totalRevenue);
+  cout << "Average Price: " << roundToTwoDecimalPlaces(avgPrice);
  }
 };
 
 int main()
 {
- double revenue;
+ double rev;
  int units;
 
- cin >> revenue >> units;
+ cout << "Total Revenue: ";
+ cin >> rev;
 
- SalesData sales(revenue, units);
- sales.displayData();
+ cout << "Units sold: ";
+ cin >> units;
 
+ SalesData s1(rev, units);
+ s1.display();
  return 0;
 }
