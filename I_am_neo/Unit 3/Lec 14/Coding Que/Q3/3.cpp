@@ -53,6 +53,11 @@ public:
  // Copy constructor
  Room(const Room &other) : length(other.length), breadth(other.breadth), height(other.height) {}
 
+ // Method to update dimensions based on new values    // Method to reduce breadth by 10
+ void applyBreadthReduction()
+ {
+  breadth -= 10;
+ }
  int calculateArea() const
  {
   return 2 * (length + breadth) * height;
@@ -64,16 +69,10 @@ int main()
  int l, b, h;
  std::cin >> l >> b >> h;
 
- Room r1(l, b, h);
- Room r2 = r1; // Using copy constructor
+ Room r1(l, b, h); // Original room object
+ Room r2 = r1;     // Copy of r1 using the copy constructor
 
- int new_l, new_b, new_h;
- std::cin >> new_l >> new_b >> new_h; // This input is not used in this problem statement
-
- if (new_b != -1)
- {
-  r2.breadth = r2.breadth - 10;
- }
+ r2.applyBreadthReduction(); // Update r2 dimensions based on new values
 
  std::cout << "r1 area: " << r1.calculateArea() << std::endl;
  std::cout << "r2 area: " << r2.calculateArea() << std::endl;
