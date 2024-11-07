@@ -1,66 +1,41 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
-class Distance
+class Integer
 {
- int feet;
- int inches;
+ int N;
 
 public:
- // default constructor
- Distance() : feet(0), inches(0) {}
+ Integer(int n = 0) : N(n) {}
 
- // copy constructor
- Distance(Distance &obj)
+ void getValue() const
  {
-  feet = obj.feet;
-  inches = obj.inches;
+  cout << N;
  }
 
- void setDistance(int f, int i)
+ void setValue(int n)
  {
-  feet = f;
-  inches = i;
- }
-
- Distance add(const Distance &other)
- {
-  int totalFeet = feet + other.feet;
-  int totalInches = inches + other.inches;
-
-  // Convert inches to feet if totalInches >= 12
-  if (totalInches >= 12)
-  {
-   totalFeet += totalInches / 12;
-   totalInches %= 12;
-  }
-  Distance d3;
-  d3.feet = totalFeet;
-  d3.inches = totalInches;
-  return d3;
- }
-
- void displayDistance()
- {
-  cout << feet << "'" << inches << "\"" << endl;
+  N = n;
  }
 };
 int main()
 {
- int f1, i1, f2, i2;
- // cout<<"Feet:";
- cin >> f1 >> i1 >> f2 >> i2;
- // cout<<"Inches:";
- // cin>>i;
+ int N;
+ cin >> N;
+ vector<Integer> arr(N);
 
- Distance d1;
- d1.setDistance(f1, i1);
+ for (int i = 0; i < N; i++)
+ {
+  if (i % 2 != 0)
+  {
+   arr[i].setValue(10);
+  }
+ }
+ for (int i = 0; i < N; i++)
+ {
+  cout << arr[i].getValue();
+ }
 
- Distance d2;
- d2.setDistance(f2, i2);
-
- Distance d3;
- d3 = d1.add(d2);
- d3.displayDistance();
  return 0;
 }
