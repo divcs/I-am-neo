@@ -3,16 +3,14 @@
 Create a class named "Money" with the attributes "rupee" and "paise". Implement a constructor that initializes rupees and paise with default values of 0.
 
 
-
 Create member functions setRupee() and setPaise() to set the values, and getRupee() and getPaise() to retrieve them. If the paise exceeds 99, increment rupees by 1 and adjust the paise.
 
 Input format :
 The input consists of two amounts in each line, rupee (integer) and paise (integer), separated by a space in each line.
 
+
 Output format :
 The output prints two integers separated by a period (.), representing the sum of rupees and paise, respectively.
-
-
 
 Refer to the sample output for formatting specifications.
 
