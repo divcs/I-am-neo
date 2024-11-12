@@ -1,32 +1,47 @@
 #include <iostream>
-#include <cstring>
+#include <vector>
 using namespace std;
 
-char *reversedString(const char *str)
+vector<int> reversedArray(const vector<int> &arr, const int n)
 {
- int len = strlen(str);
- char *reversed = new char[len + 1];
 
- for (int i = 0; i < len; i++)
+ vector<int> reversed(n);
+
+ for (int i = 0; i < n; i++)
  {
-  reversed[i] = str[len - i - 1];
+  reversed[i] = arr[n - i - 1];
  }
- reversed[len] = '\0';
+
  return reversed;
 }
-
 int main()
 {
- string sentence;
- cout << "Enter a sentence: ";
- getline(cin, sentence); // Read the entire input sentence including spaces
+ int N;
 
- // Call reverseString function to get the reversed string
- char *reversedSentence = reversedString(sentence.c_str());
+ cin >> N;
+ if (N <= 0)
+ {
+  cout << "Size should be positive" << endl;
+  return 1;
+ }
+ vector<int> arr(N);
 
- // Output the reversed sentence in the required format
- cout << "Reversed string: " << reversedSentence << endl;
+ for (int i = 0; i < N; i++)
+ {
+  cin >> arr[i];
+ }
+ cout << "Original Array: " << " ";
+ for (int i = 0; i < N; i++)
+ {
+  cout << arr[i] << " ";
+ }
+ cout << endl;
+ vector<int> reversedArr = reversedArray(arr, N);
+ cout << "Reversed Array: " << " ";
+ for (int i = 0; i < N; i++)
+ {
+  cout << reversedArr[i] << " ";
+ }
 
- // Free the dynamically allocated memory
- delete[] reversedSentence;
+ return 0;
 }
