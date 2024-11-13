@@ -1,26 +1,57 @@
 #include <iostream>
-#include <iomanip>
 using namespace std;
+
+// Function to find all pairs whose sum equals the target
+void findPairs(int *arr, int n, int target)
+{
+ bool found = false;
+
+ for (int i = 0; i < n; i++)
+ {
+  for (int j = i + 1; j < n; j++)
+  {
+   if (arr[i] + arr[j] == target)
+   {
+    if (!found)
+    {
+     cout << "Pairs with the sum " << target << " are: ";
+     found = true;
+    }
+    cout << "Pair found: (" << arr[i] << ", " << arr[j] << ") ";
+   }
+  }
+ }
+
+ if (!found)
+ {
+  cout << "No pair";
+ }
+
+ cout << endl;
+}
 
 int main()
 {
- int *numbers = new int[100];
- int num;
- int sum = 0;
- double avg = 0.0;
- int count = 0;
- 
- while (cin >> num && num >= 0)
+ int n;
+ cin >> n; // Input the size of the array
+
+ // Dynamically allocate memory for the array
+ int *arr = new int[n];
+
+ // Input the elements of the array
+ for (int i = 0; i < n; i++)
  {
-  numbers[count] = num;
-  sum += num;
-  count++;
+  cin >> arr[i];
  }
- if (count > 0)
- {
-  avg = static_cast<double>(sum / count);
- }
- cout << "Sum: " << sum << endl;
- cout << fixed << setprecision(2) << "Average: " << avg << endl;
+
+ int target;
+ cin >> target; // Input the target sum
+
+ // Call the function to find and print the pairs
+ findPairs(arr, n, target);
+
+ // Free the dynamically allocated memory
+ delete[] arr;
+
  return 0;
 }
