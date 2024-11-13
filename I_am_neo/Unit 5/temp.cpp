@@ -1,47 +1,26 @@
 #include <iostream>
-#include <vector>
+#include <iomanip>
 using namespace std;
 
-vector<int> reversedArray(const vector<int> &arr, const int n)
-{
-
- vector<int> reversed(n);
-
- for (int i = 0; i < n; i++)
- {
-  reversed[i] = arr[n - i - 1];
- }
-
- return reversed;
-}
 int main()
 {
- int N;
-
- cin >> N;
- if (N <= 0)
+ int *numbers = new int[100];
+ int num;
+ int sum = 0;
+ double avg = 0.0;
+ int count = 0;
+ 
+ while (cin >> num && num >= 0)
  {
-  cout << "Size should be positive" << endl;
-  return 1;
+  numbers[count] = num;
+  sum += num;
+  count++;
  }
- vector<int> arr(N);
-
- for (int i = 0; i < N; i++)
+ if (count > 0)
  {
-  cin >> arr[i];
+  avg = static_cast<double>(sum / count);
  }
- cout << "Original Array: " << " ";
- for (int i = 0; i < N; i++)
- {
-  cout << arr[i] << " ";
- }
- cout << endl;
- vector<int> reversedArr = reversedArray(arr, N);
- cout << "Reversed Array: " << " ";
- for (int i = 0; i < N; i++)
- {
-  cout << reversedArr[i] << " ";
- }
-
+ cout << "Sum: " << sum << endl;
+ cout << fixed << setprecision(2) << "Average: " << avg << endl;
  return 0;
 }

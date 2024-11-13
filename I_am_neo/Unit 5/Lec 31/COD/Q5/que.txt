@@ -1,0 +1,35 @@
+Robin is working on a program that helps students in a mathematics class. He is tasked to write a program to calculate and store the first 'n' terms of an arithmetic progression, given the initial term and the common difference.
+
+
+
+The program should dynamically allocate memory for an array to store these terms and then compute and display the sum of the arithmetic progression. Help the students by writing a program that takes the necessary inputs and provides the expected output.
+
+Input format :
+The input consists of three space-separated integers n, t, and d.
+
+An integer 'n', represents the number of terms in the arithmetic progression.
+An integer 't', represents the first term of the arithmetic progression.
+An integer 'd', represents the common difference between consecutive terms.
+Output format :
+The output displays an integer representing the sum of the arithmetic progression.
+
+
+
+Refer to the sample output for the formatting specifications.
+
+Code constraints :
+1 ≤ n ≤ 150
+
+1 ≤ t ≤ 250
+
+1 ≤ d ≤ 50
+
+Sample test cases :
+Input 1 :
+5 2 3
+Output 1 :
+40
+Input 2 :
+7 2 4
+Output 2 :
+98
