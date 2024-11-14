@@ -1,49 +1,49 @@
 #include <iostream>
 using namespace std;
 
-int main()
+void findPairs(int *arr, int n, int target)
 {
- int size;
- cout << "Enter the size of the array: ";
- cin >> size;
+ bool foundPair = false;
 
- int *arr = new int[size];
- cout << "Enter the elements of the array: ";
- for (int i = 0; i < size; i++)
+ for (int i = 0; i < n; i++)
  {
-  cin >> arr[i];
- }
-
- int target;
- cout << "Enter the target number: ";
- cin >> target;
-
- bool found = false;
-
- for (int i = 0; i < size; i++)
- {
-  int opp = target - arr[i];
-  for (int j = i + 1; j < size; j++)
+  for (int j = i + 1; j < n; j++)
   {
-   if (arr[j] == opp)
+   if (arr[i] + arr[j] == target)
    {
-    if (!found)
-    {
-     cout << "Pairs with the sum " << target << " are: ";
-     found = true;
-    }
-    cout << "Pair found: (" << arr[j] << ", " << arr[i] << ") " << endl;
+    cout << "(" << arr[i] << ", " << arr[j] << ")" << endl;
+    foundPair = true;
    }
   }
  }
 
- if (!found)
+ if (!foundPair)
  {
-  cout << "No pair";
+  cout << "No pair" << endl;
+ }
+}
+
+int main()
+{
+ int n, target;
+
+ cout << "Enter the size of the array: ";
+ cin >> n;
+
+ int *arr = new int[n];
+
+ cout << "Enter " << n << " integers: ";
+ for (int i = 0; i < n; i++)
+ {
+  cin >> arr[i];
  }
 
- cout << endl;
+ cout << "Enter the target sum: ";
+ cin >> target;
+
+ findPairs(arr, n, target);
 
  delete[] arr;
+
  return 0;
 }
