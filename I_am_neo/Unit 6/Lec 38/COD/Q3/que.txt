@@ -1,0 +1,49 @@
+Single File Programming Question
+Problem Statement
+
+
+
+﻿Mayon is working on a banking application, and a portion of his code deals with handling withdrawal transactions from a customer's account.
+
+
+
+Prior to processing the withdrawal, he aims to verify whether the account balance is adequate to cover the requested amount.
+
+
+
+In case the account balance is insufficient (less than the requested withdrawal amount), Mayon plans to throw an exception of type std::underflow_error. How should he go about implementing this functionality in his banking application?
+
+
+
+Note: This kind of question will be helpful in clearing TCS recruitment.
+
+Input format :
+The first line of input consists of the initial balance of the bank account (double).
+
+The second line of input consists of the withdrawal amount to withdraw from the account (double).
+
+Output format :
+If the withdrawal amount is less than or equal to the account balance, the code will display the new account balance after the withdrawal.
+
+If the withdrawal amount is greater than the account balance, the code will catch the exception of type std::underflow_error and display a simple error message indicating insufficient funds.
+
+
+
+Refer to the sample output for the formatting specifications.
+
+Code constraints :
+1 <= initial amount, withdraw amount <= 106
+
+Sample test cases :
+Input 1 :
+15000
+10000
+Output 1 :
+Withdrawal successful.
+New balance: 5000
+Input 2 :
+8000
+9000
+Output 2 :
+Exception caught.
+Error: Insufficient money for withdrawal
