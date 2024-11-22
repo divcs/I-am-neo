@@ -1,0 +1,58 @@
+Single File Programming Question
+Problem Statement
+
+
+
+Implement a template class Queue that stores elements of any data type. The class should have functions to enqueue an element into the queue, dequeue an element from the queue, and display the elements in the queue.
+
+
+
+Take user input to enqueue elements into the queue and output the dequeued elements and the elements remaining in the queue.
+
+
+
+Note: This kind of question will be helpful in clearing Accenture recruitment.
+
+Input format :
+The first line of input should contain an integer n, the number of elements to be enqueued in the integer queue.
+
+The second line of input should contain n integers separated by spaces, the elements to be enqueued in the integer queue.
+
+The third line of input should contain an integer m, the number of elements to be enqueued in the double queue.
+
+The fourth line of input should contain m doubles separated by spaces, the elements to be enqueued in the double queue.
+
+Output format :
+The output should display the elements of the integer queue and the double queue after enqueuing all the elements.
+
+After dequeuing one element from each queue, the output should display the updated elements of both queues.
+
+
+
+Refer to the sample input and output for format specifications.
+
+Sample test cases :
+Input 1 :
+3
+10 20 30
+2
+4.5 5.6
+Output 1 :
+Queue elements: 10 20 30 
+Dequeueing an element from the integer queue
+Queue elements: 20 30 
+Queue elements: 4.5 5.6 
+Dequeueing an element from the double queue
+Queue elements: 5.6 
+Input 2 :
+5
+2 4 6 8 10
+3
+1.2 3.4 5.6
+Output 2 :
+Queue elements: 2 4 6 8 10 
+Dequeueing an element from the integer queue
+Queue elements: 4 6 8 10 
+Queue elements: 1.2 3.4 5.6 
+Dequeueing an element from the double queue
+Queue elements: 3.4 5.6 
