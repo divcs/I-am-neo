@@ -1,6 +1,11 @@
 {
   "files.associations": {
     "iostream": "cpp",
-    "iomanip": "cpp"
+    "iomanip": "cpp",
+    "sstream": "cpp",
+    "ostream": "cpp",
+    "deque": "cpp",
+    "string": "cpp",
+    "vector": "cpp"
   }
 }
