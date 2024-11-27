@@ -1,0 +1,73 @@
+Problem Statement
+
+
+
+Jennifer is a university student who is studying computer science. She wants to create a Student Database Management System using for her university project. The system should allow users to perform various operations on the student database, such as adding a new student, updating a student's grades, and displaying student details. 
+
+
+
+Jennifer has decided to use algorithms and iterators to efficiently manage the database and perform the required tasks.
+
+Input format :
+The input consists of the following format:
+
+Add Student: This option allows the user to add a new student to the database. The student's name (a string) and roll number (an integer).
+Update Student Grades: This option allows the user to update the grades of a specific student in the database. The student's roll number (an integer) and three grades (three integers separated by spaces).
+Display Student Details: This option allows the user to view the details of a specific student in the database. The student's roll number (an integer).
+Exit: This option allows the user to exit the program.
+Output format :
+The output consists of the following format:
+
+
+
+When adding a student, the program will confirm the successful addition of the student.
+
+When updating grades, the program will inform the user if the student's roll number is found in the database; otherwise, it will print a not found message.
+
+When displaying student details, the program will print the student's name, roll number, and grades.
+
+If the choice is greater than 4, it prints the Invalid choice.
+
+On the last line, print the exit message.
+
+
+
+Refer to the sample output for the formatting specifications.
+
+Code constraints :
+The student name will be a string containing alphanumeric characters and spaces, and its length will not exceed 100 characters.
+
+The student roll number will be an integer in the range of 1 to 10000.
+
+The grades will be three integers in the range of 0 to 100.
+
+The maximum number of students in the database will not exceed 1000.
+
+Sample test cases :
+Input 1 :
+1
+Jane Smith
+1002
+2
+1002
+8 9 7
+3
+1002
+4
+Output 1 :
+Name: Jane Smith
+Roll Number: 1002
+Grades: 8 9 7 
+Exiting the program.
+Input 2 :
+1
+Alice Johnson
+1003
+3
+1002
+5
+4
+Output 2 :
+Student with Roll Number 1002 not found.
+Invalid choice
+Exiting the program.
