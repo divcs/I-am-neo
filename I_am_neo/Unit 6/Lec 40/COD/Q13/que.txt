@@ -1,0 +1,33 @@
+Problem Statement
+
+
+
+In the music playlist application, offering a personalized and distinct listening experience to users is crucial. To ensure that users' playlists do not contain duplicate songs, the application has developed a custom function called getUniqueElements. 
+
+
+
+When users create a playlist and add songs to the "songsList," the "getUniqueElements" function efficiently filters out any duplicate song IDs. As a result, users receive a new list that contains only the unique song IDs, providing a well-curated and uninterrupted music-listening experience. 
+
+Input format :
+The first line consists of the number of songs in the songsList, N.
+
+The second line consists of N song IDs separated by a space.
+
+Output format :
+The output displays the filtered list after removing the duplicates in a sorted order.
+
+Code constraints :
+1 <= N <= 104
+
+Sample test cases :
+Input 1 :
+5
+14 8 65 65 14
+Output 1 :
+8 14 65 
+Input 2 :
+5
+64 64 64 64 64
+Output 2 :
+64 
+Code Size : 1024 kb
