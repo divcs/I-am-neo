@@ -1,0 +1,14 @@
+10. Develop a home automation system that manages appliances like lights, fans, and thermostats. Use pointers to object to dynamically create appliances and assign unique Ids to each. Implement virtual functions for controlling appliances, allowing for different behaviours like dimming lights or adjusting temperatures
+
+9. Build a system for managing patient records in a hospital. Use inheritance to create different types of patient records. Include exception handling for cases like invalid patient Ids. and file operations to store patient data.
+
+1. Design an online shopping cart system where each product is represented as an object. Use operator overloading to manage operations such as adding items to the cart and calculating the total cost. Implement dynamic memory management for adding and removing items effectively.
+
+2. Develop and inventory system for a retail store that tracks different categories of items. Implement operator overloading to handle operations like comparing prices or adding quantities of the same item type. Use constructors to initialize inventory data and destructors for clean-up.
+
+3. Develop a program that allows users to draw different shapes like circles, rectangles, and triangles, Use polymorphism to provide different implementations for drawing each shape. Allow the user to input shape dimensions using reference variables.
+
+5. Create an airline reservation system that uses multi-level inheritance to manage different classes of travellers (economy, business, first class). Implement friend classes to allow a booking class to access passenger details securely.
+
+6.Build a student managment system that stores and manipulates student records. Use a friend function to access private data members of different
+classes reperensting students and their course. Incorporate file handling to save and retrieve student records.
